@@ -1,38 +1,253 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Outfit:wght@100;200&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.brand{
+    width: 120px;
+    margin: 13px 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* HEADER */
+.header{
+    position: sticky;
+    top: 0;
+    background: #ffffffd4;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 8px 20px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* loader*/
+.loader{
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.loader > img{
+    width: 200px;
+    height: 200px;
+    margin: 15% auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* theme text*/
+.themeText{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+/* shopping cart button*/
+.toggle-btn{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    background: #ff0000;
+    cursor: pointer;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+}
+.closeCartList{
+    display: flex;
+    justify-content: end;
+}
+#exit{
+    border-radius: 50%;
+    color: black;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+#exit > img{
+    width: 100%;
+    height: 100%;
+}
+#shoppingcart{
+    position: fixed;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 550px;
+    height: 650px;
+    top: -700px;
+    right: 33%;
+    transition: all 300ms linear;
+    padding-bottom: 100px;
+}
+#shoppingcart > img{
+    width: 450px;
+    margin: 10px 8%;
+}
+#shoppingcart.active{
+    display: block;
+    background-color: greenyellow;
+    top: 30px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cartItem{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid green;
+    color: #fff;
+}
+.info{  /* Jami summa*/
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid;
+}
+.info > p{
+    font-size: 20px;
+}
+.emptyGIF{
+    width: 100%;
+}
+
+/* shopping */
+
+.cartItem > .cartMain{
+    flex-grow: 1;
+    margin-left: 10px;
+}
+.cartItem > div > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cartMain > div > .itemTitle{
+    font-family: 'MOntserrat' sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #151719;
+}
+.cartItem p{
+    margin: 6px 0;
+}
+.cartItemImage{
+    width: 74px ;
+}
+.cartMain > div > .itemQuantity{ /* maxsulot narxi*/
+    font-family: 'MOntserrat' sans-serif;
+    color: rgb(38, 121, 124);
+}
+.cartPrice{
+    color: #00ab49;
+    font-weight: 600;
+    font-family: 'MOntserrat' sans-serif;
+    font-size: 1.4rem;
+}
+.quantityBtn{
+    background: #ff0000;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    font-size: 1.7rem;
+    margin-left: 7px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+/* CART-ITEM SCROLL*/
+
+.cartList{
+    overflow-y: auto;
+    height: 56vh;
+}
+
+.cartList::-webkit-scrollbar-track{
+    background: #f5f5f5;
+}
+.cartList::-webkit-scroll-bar{
+    width: 7px;
+    background: #e3e3e3;
+}
+.cartList::-webkit-scrollbar-thumb{
+    background: #ff0000;
+}
+/** CARD **/
+.card-list{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+    padding: 20px 50px;
+    border: 1px dotted red;
+}
+.card{
+    background: #Fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.cardHeader{
+    text-align: center;
+    padding: 15px;
+}
+.cardHeader > img{
+    width: 80%;
+}
+.cardBody{
+    padding: 15px;
+    height: 100%;
+}
+.cardBody > .cardTitle{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-family: 'MOntserrat' sans-serif;
+}
+.cardBody > .cardDesc{
+    height: 13%;
+    font-size: 15px;
+    color: rgb(95, 94, 94);
+    margin: 0;
+    overflow-y: hidden;
+    padding: 0;
+    font-family: 'MOntserrat' sans-serif;
+}
+.cardBody > .cardPrice{
+    font-family: 'outfit' sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(50,50,50);
+}
+.cardBody button, .purchaseBtn{
+    background-color: rgb(0, 171, 73);
+    box-shadow: rgb(0, 171, 73/25%) 0 5px 10px;
+    width: 100%;
+    padding: 12px 24px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'MOntserrat' sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+cardBody button:hover{
+    box-shadow: rgb(0, 171, 73/25%) 0 5px 15px;
+}
+.cardIcon{
+    width: 7%;
+    margin-right: 7px;
+    background: green;
 }

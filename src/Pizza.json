@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "title": "Yurak Pizza",
+        "desc": "Yaxshi ko’rgan insoningizni g'ayrioddiy pitsa bilan hayratda qoldiring ❤️ Pepperoni kolbasalari, yumshoq mozzarella pishloqi va pomidor sousi 😋",
+        "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F6d45a283-a19c-4cea-a45a-99a4b690e0cf.jpg&w=384&q=75",
+        "price": 79000,
+        "quantity": 0
+    }, 
+    {
+        "id": "2",
+        "title": "Salsa",
+        "desc": "Joʻja, salsa sousi, mayin motsarella pishlogʻi, xalapenyo, bulgʻor qalampiri va pomidorlar",
+        "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F2c814f26-9d3c-4b66-ae54-003fe4db2cb4.jpg&w=384&q=75",
+        "price": 75000,
+        "quantity": 0
+    },
+    {
+        "id": "3",
+        "title": "Gurme",
+        "desc": "Pizza sous, zaytun, pepperoni, qo'ziqorin, oregano",
+        "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2Fd020eb98-5c57-43d6-ba90-969907dc8186.jpg&w=384&q=75",
+        "price": 75000,
+        "quantity": 0
+    },
+    {
+        "id": "4",
+        "title": "Chiken karri",
+        "desc": "Mol goʻshtili rulet va tovuq filesi motsarella pishlogʻi, ananas va Karri sousi bilan",
+        "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F45bd4064-2430-4250-899d-d6f834d36c30.jpg&w=384&q=75",
+        "price": 75000,
+        "quantity": 0
+    },
+    {
+        "id": "5",
+        "title": "Pishloqli joʻja",
+        "desc": "Yumshoq tovuq filesi, motsarella pishlogʻi, pomidor va pishloqli sous",
+        "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F17126e05-7876-45a6-be19-e6d0af0328a4.jpg&w=384&q=75",
+        "price": 79000,
+        "quantity": 0
+    },
+    {
+        "id": "6",
+        "title": "Dabl pepperoni",
+        "desc": "Ikki hissa pepperoni motsarella pishlogʻi va tomat sousi bilan",
+        "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F23138748-1bff-4994-b42b-cf7044ed4e0d.jpg&w=384&q=75",
+        "price": 65000,
+        "quantity": 0
+    },
+    {
+        "id": "7",
+        "title": "Kombo",
+        "desc": "Kurka filesi, pepperoni, tovuq filesi va motsarella pishlogʻi tomat sousi bilan",
+        "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F0c3ac5fd-3915-42a6-8bca-dd74ae0fcef4.jpg&w=384&q=75",
+        "price": 50000,
+        "quantity": 0
+    },
+    {
+        "id": "8",
+        "title": "Kebab",
+        "desc": "Kabob, qarsildoq bulgʻor qalampiri, pomidor va piyoz tomat sousi bilan",
+        "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2Fd0d3d914-a239-428b-b493-ad80516bb39f.jpg&w=384&q=75",
+        "price": 54000,
+        "quantity": 0
+    },
+    {
+        "id": "9",
+        "title": "Gavaycha",
+        "desc": "Shirador ananas, eritilgan motsarella pishlogʻi va mazali kurka goʻshti tomat sousi bilan",
+        "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2Fdd24081f-68dd-46e0-b7a1-6d7ed3e1ac1b.jpg&w=384&q=75",
+        "price": 70000,
+        "quantity": 0
+    }
+]
